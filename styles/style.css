@@ -8,6 +8,10 @@
 }
 
 /* Custom selectors */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   padding-top: 50px; /* to account for fixed nav bar, defaulted to 50px */
 }
@@ -26,4 +30,24 @@ body {
 .anchor-heading {
   padding-top: 50px; /* to account for fixed nav bar, defaulted to 50px */
   margin-top: -50px; /* to account for fixed nav bar, defaulted to 50px */
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.btn-circular {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px hsla(0,0%,100%,.9);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  color: inherit;
+  margin: 15px;
+}
+.btn-circular:hover {
+  background-color: rgba(0,0,0,.1);
 }

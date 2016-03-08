@@ -1,7 +1,15 @@
 .navbar-brand > img {
   height: 100%;
 }
+body {
+  padding-top: 50px; /* to account for fixed nav bar, defaulted to 50px */
+}
 .img-author {
   width: 8em;
   border-radius: 4em;
+}
+
+.anchor-heading {
+  padding-top: 50px; /* to account for fixed nav bar, defaulted to 50px */
+  margin-top: -50px; /* to account for fixed nav bar, defaulted to 50px */
 }
